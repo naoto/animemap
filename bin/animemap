@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'animemap'
+
+Animemap.location(ARGV.first).each do |data|
+  puts "#{data.week} #{data.time} #{data.title}"
+end
